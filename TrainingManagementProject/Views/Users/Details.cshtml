@@ -1,0 +1,82 @@
+﻿@model TrainingManagementProject.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserDateOfJoining)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserDateOfJoining)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserEmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoleId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoleId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
