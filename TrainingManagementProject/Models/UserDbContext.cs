@@ -11,5 +11,7 @@ namespace TrainingManagementProject.Models
     {
         public DbSet<User> users { get; set; }
         public DbSet<Role> roles { get; set; }
+        public DbSet<Course> courses { get; set; }
+        public DbSet<Batch> batches { get; set; }
     }
 }

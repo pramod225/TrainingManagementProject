@@ -127,10 +127,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BatchesController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011100847111_InitialCreate.cs" />
+    <Compile Include="Migrations\202011100847111_InitialCreate.designer.cs">
+      <DependentUpon>202011100847111_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011110629294_change.cs" />
+    <Compile Include="Migrations\202011110629294_change.designer.cs">
+      <DependentUpon>202011110629294_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011110659301_change1.cs" />
+    <Compile Include="Migrations\202011110659301_change1.designer.cs">
+      <DependentUpon>202011110659301_change1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011110723417_change2.cs" />
+    <Compile Include="Migrations\202011110723417_change2.designer.cs">
+      <DependentUpon>202011110723417_change2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011110740026_change3.cs" />
+    <Compile Include="Migrations\202011110740026_change3.designer.cs">
+      <DependentUpon>202011110740026_change3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Batch.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserDbContext.cs" />
@@ -148,6 +174,17 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Batches\Create.cshtml" />
+    <Content Include="Views\Batches\Delete.cshtml" />
+    <Content Include="Views\Batches\Details.cshtml" />
+    <Content Include="Views\Batches\Edit.cshtml" />
+    <Content Include="Views\Batches\Index.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
+    <Content Include="Views\Courses\Delete.cshtml" />
+    <Content Include="Views\Courses\Details.cshtml" />
+    <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -157,6 +194,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202011100847111_InitialCreate.resx">
+      <DependentUpon>202011100847111_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011110629294_change.resx">
+      <DependentUpon>202011110629294_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011110659301_change1.resx">
+      <DependentUpon>202011110659301_change1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011110723417_change2.resx">
+      <DependentUpon>202011110723417_change2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011110740026_change3.resx">
+      <DependentUpon>202011110740026_change3.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,50 @@
+﻿@model TrainingManagementProject.Models.Batch
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Batch</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BatchCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatchStartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchStartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatchNoOfSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchNoOfSeats)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

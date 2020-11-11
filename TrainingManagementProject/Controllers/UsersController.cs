@@ -12,7 +12,7 @@ namespace TrainingManagementProject.Controllers
 {
     public class UsersController : Controller
     {
-        private UserDbContext db = new UserDbContext();
+        public  UserDbContext db = new UserDbContext();
 
         // GET: Users
         void InitilazieRoles()
@@ -108,7 +108,8 @@ namespace TrainingManagementProject.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
+            ViewBag.roles = FillRoles();
+            ViewBag.managerList = GetManagers();
             return View(user);
         }
 
@@ -124,6 +125,8 @@ namespace TrainingManagementProject.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.roles = FillRoles();
+            ViewBag.managerList = GetManagers();
             return View(user);
         }
 
@@ -155,6 +158,8 @@ namespace TrainingManagementProject.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.roles = FillRoles();
+            ViewBag.managerList = GetManagers();
             return View(user);
         }
 
